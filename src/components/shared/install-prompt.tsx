@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { Download } from "lucide-react";
+import { useMounted } from "@/lib/use-mounted";
 
 type PromptEvent = Event & {
   prompt: () => Promise<void>;
@@ -11,30 +12,31 @@ type PromptEvent = Event & {
 /** چیپ «نصب اپ» پابرگ: روی اندروید/دسکتاپ از beforeinstallprompt استفاده می‌کند؛
  *  روی iOS راهنمای «افزودن به صفحه اصلی» را نشان می‌دهد. در حالت نصب‌شده پنهان است. */
 export function InstallChip() {
+  const mounted = useMounted();
   const [evt, setEvt] = React.useState<PromptEvent | null>(null);
-  const [ready, setReady] = React.useState(false);
-  const [isIOS, setIsIOS] = React.useState(false);
   const [showHint, setShowHint] = React.useState(false);
 
+  // تشخیص نصب/پلتفرم در رندر (پس از mount) — بدون setState همزمان در effect
+  const installed =
+    mounted &&
+    (window.matchMedia("(display-mode: standalone)").matches ||
+      (navigator as { standalone?: boolean }).standalone === true);
+  const isIOS = mounted && /iP(hone|ad|od)/.test(navigator.userAgent) && !("MSStream" in window);
+
   React.useEffect(() => {
-    const installed =
-      window.matchMedia("(display-mode: standalone)").matches ||
-      (navigator as { standalone?: boolean }).standalone === true;
     if (installed) return; // نصب‌شده → بدون دکمه
-    setIsIOS(/iP(hone|ad|od)/.test(navigator.userAgent) && !("MSStream" in window));
     const onPrompt = (e: Event) => {
       e.preventDefault();
       setEvt(e as PromptEvent);
     };
-    const onInstalled = () => setReady(false);
+    const onInstalled = () => setEvt(null);
     window.addEventListener("beforeinstallprompt", onPrompt);
     window.addEventListener("appinstalled", onInstalled);
-    setReady(true);
     return () => {
       window.removeEventListener("beforeinstallprompt", onPrompt);
       window.removeEventListener("appinstalled", onInstalled);
     };
-  }, []);
+  }, [installed]);
 
   const onClick = async () => {
     if (evt) {
@@ -46,7 +48,7 @@ export function InstallChip() {
     }
   };
 
-  if (!ready || (!evt && !isIOS)) return null;
+  if (installed || (!evt && !isIOS)) return null;
 
   return (
     <>
