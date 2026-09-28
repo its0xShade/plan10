@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" font-family="Tahoma, Vazirmatn, sans-serif" direction="rtl">
+<rect width="720" height="380" rx="16" fill="#141419"/>
+<text x="360.0" y="34" text-anchor="middle" font-size="19" font-weight="bold" fill="#fbbf24">هرم ۸ سطح رودمپ بک‌اند</text>
+<rect x="260.0" y="60" width="200" height="28" rx="8" fill="#fbbf24" opacity="0.35"/>
+<text x="360.0" y="79" text-anchor="middle" font-size="13" font-weight="bold" fill="#141419">۸ — شغل و رشد</text>
+<rect x="232.5" y="95" width="255" height="28" rx="8" fill="#fbbf24" opacity="0.42"/>
+<text x="360.0" y="114" text-anchor="middle" font-size="13" font-weight="bold" fill="#141419">۷ — امنیت و مقیاس</text>
+<rect x="205.0" y="130" width="310" height="28" rx="8" fill="#fbbf24" opacity="0.49"/>
+<text x="360.0" y="149" text-anchor="middle" font-size="13" font-weight="bold" fill="#141419">۶ — کسب درآمد</text>
+<rect x="177.5" y="165" width="365" height="28" rx="8" fill="#fbbf24" opacity="0.56"/>
+<text x="360.0" y="184" text-anchor="middle" font-size="13" font-weight="bold" fill="#141419">۵ — استقرار</text>
+<rect x="150.0" y="200" width="420" height="28" rx="8" fill="#fbbf24" opacity="0.63"/>
+<text x="360.0" y="219" text-anchor="middle" font-size="13" font-weight="bold" fill="#141419">۴ — احراز هویت و تست</text>
+<rect x="122.5" y="235" width="475" height="28" rx="8" fill="#fbbf24" opacity="0.70"/>
+<text x="360.0" y="254" text-anchor="middle" font-size="13" font-weight="bold" fill="#141419">۳ — وب با FastAPI</text>
+<rect x="95.0" y="270" width="530" height="28" rx="8" fill="#fbbf24" opacity="0.77"/>
+<text x="360.0" y="289" text-anchor="middle" font-size="13" font-weight="bold" fill="#141419">۲ — مبانی سرور</text>
+<rect x="67.5" y="305" width="585" height="28" rx="8" fill="#fbbf24" opacity="0.84"/>
+<text x="360.0" y="324" text-anchor="middle" font-size="13" font-weight="bold" fill="#141419">۱ — پایتون میانی</text>
+
+</svg>

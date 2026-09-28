@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360" font-family="Tahoma, Vazirmatn, sans-serif" direction="rtl">
+<rect width="720" height="360" rx="16" fill="#141419"/>
+<text x="360.0" y="34" text-anchor="middle" font-size="19" font-weight="bold" fill="#fbbf24">ترکیب نمره نهایی کنکور</text>
+<path d="M 360 190 L 360.0 70.0 A 120 120 0 1 1 289.4657697249032 287.08203932499373 Z" fill="#fbbf24"/>
+<path d="M 360 190 L 289.4657697249032 287.08203932499373 A 120 120 0 0 1 360.0 70.0 Z" fill="#38bdf8"/>
+<circle cx="360" cy="190" r="62" fill="#141419"/>
+<text x="360" y="184" text-anchor="middle" font-size="26" font-weight="bold" fill="#f4f4f5">۶۰٪</text>
+<text x="360" y="210" text-anchor="middle" font-size="13" fill="#a1a1ab">معدل قطعی</text>
+<rect x="90" y="150" width="18" height="18" rx="4" fill="#fbbf24"/>
+<text x="118" y="164" font-size="14" fill="#f4f4f5">سوابق تحصیلی (معدل امتحانات) — قطعی</text>
+<rect x="90" y="190" width="18" height="18" rx="4" fill="#38bdf8"/>
+<text x="118" y="204" font-size="14" fill="#f4f4f5">آزمون کنکور — فقط بعد از عید</text>
+<text x="360" y="345" text-anchor="middle" font-size="13" fill="#8b8b96">وزن کنکور ۱۴۰۶: ۶۰٪ معدل + ۴۰٪ آزمون</text>
+
+</svg>

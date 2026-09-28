@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360" font-family="Tahoma, Vazirmatn, sans-serif" direction="rtl">
+<rect width="720" height="360" rx="16" fill="#141419"/>
+<text x="360.0" y="34" text-anchor="middle" font-size="19" font-weight="bold" fill="#fbbf24">مسیر معافیت تحصیلی — ۵ قدم</text>
+<line x1="70" y1="175" x2="650" y2="175" stroke="#2a2a32" stroke-width="4" stroke-linecap="round"/>
+<circle cx="85" cy="175" r="18" fill="#4ade80"/>
+<text x="85" y="181" text-anchor="middle" font-size="15" font-weight="bold" fill="#141419">۱</text>
+<text x="85" y="130" text-anchor="middle" font-size="12" font-weight="bold" fill="#f4f4f5">شروع برنامه</text>
+<text x="85" y="225" text-anchor="middle" font-size="11" fill="#a1a1ab">مهر ۱۴۰۵</text>
+<circle cx="225" cy="175" r="18" fill="#4ade80"/>
+<text x="225" y="181" text-anchor="middle" font-size="15" font-weight="bold" fill="#141419">۲</text>
+<text x="225" y="130" text-anchor="middle" font-size="12" font-weight="bold" fill="#f4f4f5">استعلام وضعیت نظام وظیفه</text>
+<text x="225" y="225" text-anchor="middle" font-size="11" fill="#a1a1ab">زمستان</text>
+<circle cx="365" cy="175" r="18" fill="#fbbf24"/>
+<text x="365" y="181" text-anchor="middle" font-size="15" font-weight="bold" fill="#141419">۳</text>
+<text x="365" y="130" text-anchor="middle" font-size="12" font-weight="bold" fill="#f4f4f5">انتخاب دانشگاه + ثبت‌نام</text>
+<text x="365" y="225" text-anchor="middle" font-size="11" fill="#a1a1ab">بهار ۱۴۰۶</text>
+<circle cx="505" cy="175" r="18" fill="#fbbf24"/>
+<text x="505" y="181" text-anchor="middle" font-size="15" font-weight="bold" fill="#141419">۴</text>
+<text x="505" y="130" text-anchor="middle" font-size="12" font-weight="bold" fill="#f4f4f5">دریافت دیپلم</text>
+<text x="505" y="225" text-anchor="middle" font-size="11" fill="#a1a1ab">خرداد ۱۴۰۶</text>
+<circle cx="645" cy="175" r="18" fill="#fbbf24"/>
+<text x="645" y="181" text-anchor="middle" font-size="15" font-weight="bold" fill="#141419">۵</text>
+<text x="645" y="130" text-anchor="middle" font-size="12" font-weight="bold" fill="#f4f4f5">ثبت‌نام دانشگاه ← معافیت تحصیلی</text>
+<text x="645" y="225" text-anchor="middle" font-size="11" fill="#a1a1ab">مهر ۱۴۰۶</text>
+
+</svg>

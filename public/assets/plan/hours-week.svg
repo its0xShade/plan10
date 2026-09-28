@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360" font-family="Tahoma, Vazirmatn, sans-serif" direction="rtl">
+<rect width="720" height="360" rx="16" fill="#141419"/>
+<text x="360.0" y="34" text-anchor="middle" font-size="19" font-weight="bold" fill="#fbbf24">توزیع ساعت یادگیری در هفته</text>
+<line x1="70" y1="300" x2="670" y2="300" stroke="#2a2a32" stroke-dasharray="4 5"/>
+<text x="60" y="305" text-anchor="end" font-size="12" fill="#8b8b96">0</text>
+<line x1="70" y1="254" x2="670" y2="254" stroke="#2a2a32" stroke-dasharray="4 5"/>
+<text x="60" y="259" text-anchor="end" font-size="12" fill="#8b8b96">1</text>
+<line x1="70" y1="208" x2="670" y2="208" stroke="#2a2a32" stroke-dasharray="4 5"/>
+<text x="60" y="213" text-anchor="end" font-size="12" fill="#8b8b96">2</text>
+<line x1="70" y1="162" x2="670" y2="162" stroke="#2a2a32" stroke-dasharray="4 5"/>
+<text x="60" y="167" text-anchor="end" font-size="12" fill="#8b8b96">3</text>
+<line x1="70" y1="116" x2="670" y2="116" stroke="#2a2a32" stroke-dasharray="4 5"/>
+<text x="60" y="121" text-anchor="end" font-size="12" fill="#8b8b96">4</text>
+<line x1="70" y1="70" x2="670" y2="70" stroke="#2a2a32" stroke-dasharray="4 5"/>
+<text x="60" y="75" text-anchor="end" font-size="12" fill="#8b8b96">5</text>
+<line x1="70" y1="24" x2="670" y2="24" stroke="#2a2a32" stroke-dasharray="4 5"/>
+<text x="60" y="29" text-anchor="end" font-size="12" fill="#8b8b96">6</text>
+<rect x="100" y="116.0" width="52" height="184.0" rx="6" fill="#fbbf24"/>
+<text x="126.0" y="108.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#f4f4f5">6</text>
+<text x="126.0" y="322" text-anchor="middle" font-size="12" fill="#a1a1ab">شنبه</text>
+<rect x="180" y="116.0" width="52" height="184.0" rx="6" fill="#fbbf24"/>
+<text x="206.0" y="108.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#f4f4f5">6</text>
+<text x="206.0" y="322" text-anchor="middle" font-size="12" fill="#a1a1ab">یکشنبه</text>
+<rect x="260" y="116.0" width="52" height="184.0" rx="6" fill="#fbbf24"/>
+<text x="286.0" y="108.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#f4f4f5">6</text>
+<text x="286.0" y="322" text-anchor="middle" font-size="12" fill="#a1a1ab">دوشنبه</text>
+<rect x="340" y="116.0" width="52" height="184.0" rx="6" fill="#fbbf24"/>
+<text x="366.0" y="108.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#f4f4f5">6</text>
+<text x="366.0" y="322" text-anchor="middle" font-size="12" fill="#a1a1ab">سه‌شنبه</text>
+<rect x="420" y="116.0" width="52" height="184.0" rx="6" fill="#fbbf24"/>
+<text x="446.0" y="108.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#f4f4f5">6</text>
+<text x="446.0" y="322" text-anchor="middle" font-size="12" fill="#a1a1ab">چهارشنبه</text>
+<rect x="500" y="192.66666666666666" width="52" height="107.33333333333334" rx="6" fill="#38bdf8"/>
+<text x="526.0" y="184.66666666666666" text-anchor="middle" font-size="13" font-weight="bold" fill="#f4f4f5">3٫5</text>
+<text x="526.0" y="322" text-anchor="middle" font-size="12" fill="#a1a1ab">پنجشنبه</text>
+<rect x="580" y="223.33333333333331" width="52" height="76.66666666666667" rx="6" fill="#38bdf8"/>
+<text x="606.0" y="215.33333333333331" text-anchor="middle" font-size="13" font-weight="bold" fill="#f4f4f5">2٫5</text>
+<text x="606.0" y="322" text-anchor="middle" font-size="12" fill="#a1a1ab">جمعه</text>
+<text x="370.0" y="352" text-anchor="middle" font-size="13" fill="#8b8b96">مجموع هدف: ۴۱ ساعت یادگیری در هفته (میانگین روزانه ~۵.۹ ساعت)</text>
+
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360" font-family="Tahoma, Vazirmatn, sans-serif" direction="rtl">
+<rect width="720" height="360" rx="16" fill="#141419"/>
+<text x="360.0" y="34" text-anchor="middle" font-size="19" font-weight="bold" fill="#fbbf24">نردبان زبان: صفر تا B1/B2 در ۱۰ ماه</text>
+<rect x="80" y="300" width="140" height="40" rx="10" fill="#38bdf8" opacity="0.18" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="150" y="326" text-anchor="middle" font-size="17" font-weight="bold" fill="#38bdf8">A1</text>
+<text x="150" y="346" text-anchor="middle" font-size="12" fill="#f4f4f5">ماه ۱–۳</text>
+<text x="150" y="366" text-anchor="middle" font-size="11" fill="#a1a1ab">شروع از صفر — جملات ساده</text>
+<rect x="235" y="238" width="140" height="102" rx="10" fill="#4ade80" opacity="0.18" stroke="#4ade80" stroke-width="1.5"/>
+<text x="305" y="264" text-anchor="middle" font-size="17" font-weight="bold" fill="#4ade80">A2</text>
+<text x="305" y="284" text-anchor="middle" font-size="12" fill="#f4f4f5">ماه ۳–۵</text>
+<text x="305" y="304" text-anchor="middle" font-size="11" fill="#a1a1ab">مکالمه روزمره پایه</text>
+<rect x="390" y="176" width="140" height="164" rx="10" fill="#fbbf24" opacity="0.18" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="460" y="202" text-anchor="middle" font-size="17" font-weight="bold" fill="#fbbf24">B1</text>
+<text x="460" y="222" text-anchor="middle" font-size="12" fill="#f4f4f5">ماه ۵–۸</text>
+<text x="460" y="242" text-anchor="middle" font-size="11" fill="#a1a1ab">فهم ویدیو و مقاله فنی</text>
+<rect x="545" y="114" width="140" height="226" rx="10" fill="#fb7185" opacity="0.18" stroke="#fb7185" stroke-width="1.5"/>
+<text x="615" y="140" text-anchor="middle" font-size="17" font-weight="bold" fill="#fb7185">B2</text>
+<text x="615" y="160" text-anchor="middle" font-size="12" fill="#f4f4f5">ماه ۸–۱۰</text>
+<text x="615" y="180" text-anchor="middle" font-size="11" fill="#a1a1ab">مصاحبه و نوشتن حرفه‌ای</text>
+
+</svg>

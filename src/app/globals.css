@@ -1,26 +1,320 @@
 @import "tailwindcss";
 
+/* گرافیت — تم رسمی VibeFarsi (get_theme: graphite) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: dark;
+  --background: oklch(0.115 0.002 285);
+  --foreground: oklch(0.975 0 0);
+  --card: oklch(0.14 0.002 285);
+  --card-foreground: oklch(0.975 0 0);
+  --popover: oklch(0.16 0.002 285);
+  --popover-foreground: oklch(0.975 0 0);
+  --primary: oklch(0.975 0 0);
+  --primary-foreground: oklch(0.13 0 0);
+  --secondary: oklch(0.2 0.002 285);
+  --secondary-foreground: oklch(0.975 0 0);
+  --muted: oklch(0.175 0.002 285);
+  --muted-foreground: oklch(0.63 0.004 285);
+  --accent: oklch(0.2 0.002 285);
+  --accent-foreground: oklch(0.975 0 0);
+  --destructive: oklch(0.65 0.2 25);
+  --success: oklch(0.75 0.16 160);
+  --warning: oklch(0.82 0.16 80);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 11%);
+  --ring: oklch(0.7 0 0);
+  --brand: oklch(0.8 0.165 65);
+  --brand-foreground: oklch(0.22 0.06 60);
+  --radius: 0.625rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: var(--font-vazirmatn), Vazirmatn, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* قوانین تایپوگرافی فارسی (get_design_rules) */
+html {
+  letter-spacing: 0;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-size: 16.5px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--brand) 35%, transparent);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: oklch(0.3 0.002 285) transparent;
+}
+
+
+/* کاغذ — تم روشن رسمی VibeFarsi (get_theme: paper) */
+[data-theme="paper"] {
+  color-scheme: light;
+  --background: oklch(0.985 0.004 85);
+  --foreground: oklch(0.2 0.01 60);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0.01 60);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2 0.01 60);
+  --primary: oklch(0.2 0.01 60);
+  --primary-foreground: oklch(0.985 0.004 85);
+  --secondary: oklch(0.94 0.008 85);
+  --secondary-foreground: oklch(0.2 0.01 60);
+  --muted: oklch(0.955 0.006 85);
+  --muted-foreground: oklch(0.47 0.015 60);
+  --accent: oklch(0.94 0.008 85);
+  --accent-foreground: oklch(0.2 0.01 60);
+  --destructive: oklch(0.58 0.2 25);
+  --success: oklch(0.55 0.15 160);
+  --warning: oklch(0.7 0.15 75);
+  --border: oklch(0.2 0.01 60 / 12%);
+  --input: oklch(0.2 0.01 60 / 16%);
+  --ring: oklch(0.5 0.02 60);
+  --brand: oklch(0.68 0.17 55);
+  --brand-foreground: oklch(0.985 0 0);
+}
+
+/* اکسنت رنگی — انتخاب از پالت سایدبار (data-accent روی html) */
+:root[data-accent="teal"] { --brand: oklch(0.85 0.13 180); --brand-strong: oklch(0.72 0.12 180); --brand-foreground: oklch(0.16 0.02 190); --ring: oklch(0.72 0.12 180); }
+:root[data-accent="green"] { --brand: oklch(0.85 0.16 145); --brand-strong: oklch(0.72 0.15 145); --brand-foreground: oklch(0.16 0.02 145); --ring: oklch(0.72 0.15 145); }
+:root[data-accent="blue"] { --brand: oklch(0.82 0.13 250); --brand-strong: oklch(0.7 0.13 250); --brand-foreground: oklch(0.16 0.02 250); --ring: oklch(0.7 0.13 250); }
+:root[data-accent="rose"] { --brand: oklch(0.8 0.13 350); --brand-strong: oklch(0.68 0.14 350); --brand-foreground: oklch(0.16 0.02 350); --ring: oklch(0.68 0.14 350); }
+/* حالت روشن (کاغذ): سایه تیره‌تر هر اکسنت برای خوانایی روی زمینه روشن */
+[data-theme="paper"][data-accent="gold"] { --brand: oklch(0.6 0.14 65); --brand-strong: oklch(0.55 0.13 65); --brand-foreground: oklch(0.99 0 0); --ring: oklch(0.6 0.14 65); }
+[data-theme="paper"][data-accent="teal"] { --brand: oklch(0.55 0.12 180); --brand-strong: oklch(0.5 0.12 180); --brand-foreground: oklch(0.99 0 0); --ring: oklch(0.5 0.12 180); }
+[data-theme="paper"][data-accent="green"] { --brand: oklch(0.55 0.15 145); --brand-strong: oklch(0.5 0.15 145); --brand-foreground: oklch(0.99 0 0); --ring: oklch(0.5 0.15 145); }
+[data-theme="paper"][data-accent="blue"] { --brand: oklch(0.5 0.13 250); --brand-strong: oklch(0.45 0.13 250); --brand-foreground: oklch(0.99 0 0); --ring: oklch(0.45 0.13 250); }
+[data-theme="paper"][data-accent="rose"] { --brand: oklch(0.55 0.15 350); --brand-strong: oklch(0.5 0.15 350); --brand-foreground: oklch(0.99 0 0); --ring: oklch(0.5 0.15 350); }
+
+/* ————— مشکی مطلق (OLED / دارک اولترا) ————— */
+[data-theme="midnight"] {
+  color-scheme: dark;
+  --background: oklch(0 0 0);
+  --foreground: oklch(0.96 0 0);
+  --card: oklch(0.055 0 0);
+  --card-foreground: oklch(0.96 0 0);
+  --popover: oklch(0.07 0 0);
+  --popover-foreground: oklch(0.96 0 0);
+  --primary: oklch(0.96 0 0);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.13 0 0);
+  --secondary-foreground: oklch(0.96 0 0);
+  --muted: oklch(0.11 0 0);
+  --muted-foreground: oklch(0.6 0.005 0);
+  --accent: oklch(0.14 0 0);
+  --accent-foreground: oklch(0.96 0 0);
+  --destructive: oklch(0.65 0.2 25);
+  --success: oklch(0.75 0.16 160);
+  --warning: oklch(0.82 0.16 80);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 13%);
+  --ring: oklch(0.7 0 0);
+}
+[data-theme="midnight"] ::selection {
+  background: color-mix(in oklab, var(--brand) 45%, transparent);
+}
+
+/* ————— انیمیشن ورود صفحه ————— */
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.page-enter {
+  animation: page-enter 0.45s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-enter {
+    animation: none;
+  }
+}
+
+/* ————— کارت فلیپ (hover در دسکتاپ) ————— */
+.flip-scene {
+  perspective: 1000px;
+}
+.flip-card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.35, 0.15, 0.25, 1);
+}
+.group:hover .flip-card,
+.group:focus-visible .flip-card {
+  transform: rotateY(180deg);
+}
+.flip-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: inherit;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .flip-card {
+    transition: none;
+  }
+  .group:hover .flip-card {
+    transform: none;
+  }
+  .flip-back {
+    display: none;
+  }
+}
+
+/* چاپ / PDF — همیشه روشن، بدون رابط کاربری اضافه */
+@media print {
+  :root,
+  [data-theme="paper"],
+  [data-theme="midnight"],
+  :root[data-accent],
+  [data-theme="paper"][data-accent] {
+    color-scheme: light;
+    --background: #ffffff;
+    --foreground: oklch(0.2 0.01 60);
+    --card: #ffffff;
+    --card-foreground: oklch(0.2 0.01 60);
+    --secondary: oklch(0.95 0.005 85);
+    --secondary-foreground: oklch(0.2 0.01 60);
+    --muted: oklch(0.96 0.005 85);
+    --muted-foreground: oklch(0.45 0.015 60);
+    --accent: oklch(0.95 0.005 85);
+    --border: oklch(0.2 0.01 60 / 18%);
+    --input: oklch(0.2 0.01 60 / 20%);
+    --brand: oklch(0.55 0.14 55);
+    --brand-foreground: #ffffff;
+  }
+
+  header,
+  footer,
+  aside,
+  [data-no-print],
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: var(--foreground) !important;
+    font-size: 11.5pt;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  .mx-auto.flex {
+    display: block !important;
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  pre {
+    background: oklch(0.96 0.004 85) !important;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  article, .rounded-2xl, .rounded-xl {
+    break-inside: auto;
+  }
+
+  h1, h2, h3 {
+    break-after: avoid;
+  }
+
+  table, pre, blockquote, li {
+    break-inside: avoid;
+  }
+
+  a {
+    color: var(--foreground) !important;
+    text-decoration: none;
+  }
+
+  * {
+    box-shadow: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  @page {
+    margin: 1.5cm;
+  }
+}
+
+/* ── فوکوس کیبوردی سراسری: حلقه توکن ring برای همه دکمه/لینک/فیلد ── */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
+
+/* ── iOS/Safari: فیلد زیر ۱۶px باعث زوم خودکار می‌شود (قانون VibeFarsi) ── */
+@supports (-webkit-touch-callout: none) {
+  :root {
+    --text-sm: 1rem;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: max(1rem, 1em);
+  }
 }
