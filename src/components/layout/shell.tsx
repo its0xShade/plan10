@@ -3,11 +3,11 @@
 import * as React from "react";
 import { usePathname } from "next/navigation";
 import { ScrollProgress } from "@/components/animations/scroll-progress";
-import { Navbar } from "@/components/navbar";
-import { SiteFooter } from "@/components/site-footer";
-import { SearchDialog } from "@/components/search-dialog";
-import { NotificationEngine } from "@/components/notify-engine";
-import { MobileDock } from "@/components/mobile-dock";
+import { Navbar } from "@/components/layout/navbar";
+import { SiteFooter } from "@/components/layout/site-footer";
+import { SearchDialog } from "@/components/shared/search-dialog";
+import { NotificationEngine } from "@/components/shared/notify-engine";
+import { MobileDock } from "@/components/layout/mobile-dock";
 
 /** پوسته سایت: نوار بالای چسبان + محتوای اصلی + پابرگ (بدون سایدبار).
  *  محتوا با هر تغییر مسیر دوباره mount می‌شود تا انیمیشن ورود اجرا گردد. */

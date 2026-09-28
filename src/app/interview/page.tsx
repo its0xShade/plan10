@@ -5,7 +5,7 @@ import { MessagesSquare, Search } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, type AccordionItem } from "@/components/ui/accordion";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { INTERVIEW_BANK } from "@/lib/interview-data";
+import { INTERVIEW_BANK } from "@/lib/data/interview-data";
 import { fa } from "@/lib/utils";
 
 const TOPICS = ["همه", ...new Set(INTERVIEW_BANK.map((i) => i.topic))];

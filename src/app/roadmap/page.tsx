@@ -1,7 +1,7 @@
 import { Map } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { getRoadmap } from "@/lib/content";
-import { RoadmapChecklist } from "@/components/roadmap-checklist";
+import { RoadmapChecklist } from "@/components/roadmap/roadmap-checklist";
 import { fa } from "@/lib/utils";
 
 export default function RoadmapPage() {

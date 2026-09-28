@@ -5,7 +5,7 @@ import { BookOpenText, Droplet, Minus, Moon, Plus, Search, Scale } from "lucide-
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { LineChart, BarChart, ScatterPlot, pearson } from "@/components/charts";
+import { LineChart, BarChart, ScatterPlot, pearson } from "@/components/shared/charts";
 import {
   useStore,
   todayISO,
@@ -16,7 +16,7 @@ import {
   fromISO,
 } from "@/lib/store";
 import { useTargets, targetOfDay } from "@/lib/targets";
-import { StreakChip } from "@/components/streak-achievements";
+import { StreakChip } from "@/components/achievements/streak-achievements";
 import { fa } from "@/lib/utils";
 import Link from "next/link";
 

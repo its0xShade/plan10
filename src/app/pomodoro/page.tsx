@@ -1,6 +1,6 @@
 import { Timer } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { PomodoroTimer } from "@/components/pomodoro";
+import { PomodoroTimer } from "@/components/pomodoro/pomodoro";
 
 export const metadata = { title: "تایمر پومودورو" };
 

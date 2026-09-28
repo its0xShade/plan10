@@ -21,9 +21,9 @@ const DOCS: { slug: string; persianTitle: string; description: string }[] = [
   { slug: "09-BACKEND-ROADMAP", persianTitle: "رودمپ بک‌اند", description: "۸ سطح از مبانی تا شغل حرفه‌ای" },
 ];
 
-/** پوشه فایل‌های markdown — والد دایرکتوری پروژه (فایل‌های برنامه‌ریزی). فقط سمت سرور. */
+/** پوشه فایل‌های markdown برنامه — داخل خود پروژه (content/). فقط سمت سرور. */
 export function contentDir(): string {
-  return path.join(process.cwd(), "..");
+  return path.join(process.cwd(), "content");
 }
 
 export function listDocs(): DocMeta[] {

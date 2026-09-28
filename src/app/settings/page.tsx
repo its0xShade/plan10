@@ -6,7 +6,7 @@ import { Settings, Download, Upload, Database, ShieldCheck, FileJson } from "luc
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { NotifySettingsCard } from "@/components/notify-engine";
+import { NotifySettingsCard } from "@/components/shared/notify-engine";
 import { useTargets, DEFAULT_TARGETS, type WeeklyTargets } from "@/lib/targets";
 import { CardDescription } from "@/components/ui/card";
 import { RotateCcw, Target } from "lucide-react";

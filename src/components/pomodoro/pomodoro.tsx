@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { todayISO, toISO } from "@/lib/store";
 import { fa } from "@/lib/utils";
 import { usePomoLog, addSession, pomoToday, pomoTotal } from "@/lib/pomo";
-import { showNotification } from "@/components/notify-engine";
+import { showNotification } from "@/components/shared/notify-engine";
 
 const FOCUS_CHOICES = [15, 25, 50];
 const BREAK_CHOICES = [5, 10];

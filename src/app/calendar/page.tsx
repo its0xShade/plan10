@@ -5,7 +5,7 @@ import { AlertTriangle, CalendarDays, Download, Plus } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PLAN_EVENTS, buildICS, type PlanEvent } from "@/lib/events-data";
+import { PLAN_EVENTS, buildICS, type PlanEvent } from "@/lib/data/events-data";
 import { JALALI_MONTHS, toJalali } from "@/lib/jalali";
 import { useStore } from "@/lib/store";
 import { fa } from "@/lib/utils";

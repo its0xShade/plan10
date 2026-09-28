@@ -1,7 +1,7 @@
 import { Wrench, ShieldCheck, WifiOff, UserRound } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { GridBackground } from "@/components/backgrounds/grid";
-import { ToolsExplorer } from "@/components/tools-explorer";
+import { ToolsExplorer } from "@/components/tools/tools-explorer";
 
 export const metadata = { title: "ابزارها" };
 

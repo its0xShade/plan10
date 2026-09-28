@@ -6,8 +6,8 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BarChart } from "@/components/charts";
-import { LEET_PROBLEMS, LEET_GROUPS, LEET_DIFF_LABEL, type LeetProblem } from "@/lib/leetcode-data";
+import { BarChart } from "@/components/shared/charts";
+import { LEET_PROBLEMS, LEET_GROUPS, LEET_DIFF_LABEL, type LeetProblem } from "@/lib/data/leetcode-data";
 import { useStore } from "@/lib/store";
 import { fa } from "@/lib/utils";
 

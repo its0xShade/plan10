@@ -2,8 +2,8 @@ import { BookOpen, Sparkles, Timer, Layers } from "lucide-react";
 import { listDocs, getDoc } from "@/lib/content";
 import { Badge } from "@/components/ui/badge";
 import { GridBackground } from "@/components/backgrounds/grid";
-import { DocsExplorer, type DocCardData } from "@/components/docs-explorer";
-import { DOC_ORDER } from "@/lib/docs-meta";
+import { DocsExplorer, type DocCardData } from "@/components/docs/docs-explorer";
+import { DOC_ORDER } from "@/lib/data/docs-meta";
 import { fa } from "@/lib/utils";
 
 export const metadata = { title: "مستندات" };

@@ -5,8 +5,8 @@ import remarkGfm from "remark-gfm";
 import { ArrowLeft, ArrowRight, FileText } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { PrintButton } from "@/components/print-button";
-import { Mermaid, SlidesPlayer } from "@/components/md-views";
+import { PrintButton } from "@/components/shared/print-button";
+import { Mermaid, SlidesPlayer } from "@/components/shared/md-views";
 import { getDoc, listDocs } from "@/lib/content";
 import { cn } from "@/lib/utils";
 

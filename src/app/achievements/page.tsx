@@ -1,7 +1,7 @@
 import { Trophy } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { getRoadmap } from "@/lib/content";
-import { AchievementPanel } from "@/components/streak-achievements";
+import { AchievementPanel } from "@/components/achievements/streak-achievements";
 import { fa } from "@/lib/utils";
 
 export const metadata = { title: "نشان‌ها و استریک" };

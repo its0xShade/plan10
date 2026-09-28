@@ -14,8 +14,8 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet } from "@/components/ui/sheet";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { AccentDropdown, AccentSwatches } from "@/components/accent-picker";
+import { ThemeToggle } from "@/components/shared/theme-toggle";
+import { AccentDropdown, AccentSwatches } from "@/components/shared/accent-picker";
 import { cn } from "@/lib/utils";
 
 function openSearch() {

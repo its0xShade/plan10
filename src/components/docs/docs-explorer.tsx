@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowLeft, Search, FileText, Timer } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { DOC_CATS, docMeta } from "@/lib/docs-meta";
+import { DOC_CATS, docMeta } from "@/lib/data/docs-meta";
 import { fa } from "@/lib/utils";
 
 export interface DocCardData {

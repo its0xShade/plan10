@@ -7,11 +7,11 @@ import { ArrowDownLeft, ArrowUpRight, Minus, Map, TrendingUp } from "lucide-reac
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { LineChart, BarChart } from "@/components/charts";
+import { LineChart, BarChart } from "@/components/shared/charts";
 import { useStore, weekDates, shortDay, toISO } from "@/lib/store";
 import type { DayLog } from "@/app/log/page";
 import { fa } from "@/lib/utils";
-import type { RoadmapLite } from "@/components/streak-achievements";
+import type { RoadmapLite } from "@/components/achievements/streak-achievements";
 import { useTargets, weekTargetOf } from "@/lib/targets";
 
 /* ————————————————— ویجت پیشرفت رودمپ برای صفحه اول ————————————————— */

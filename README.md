@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# برنامه ۱۰ ماهه — از دوازدهم تا درآمد
 
-## Getting Started
+سایت شخصی برنامهٔ ۱۰ ماههٔ پوریا: ترکر روزانه، رودمپ ۱۱۰ آیتمی، مستندات کامل برنامه، تایمر پومودورو، فلش‌کارد SRS و بازی‌های تمرینی — همه‌چیز آفلاین‌محور با localStorage، بدون سرور و بدون حساب کاربری.
 
-First, run the development server:
+<p>
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-black?logo=next.js&logoColor=white">
+  <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-yellow">
+</p>
+
+## ✨ امکانات
+
+- **امروز** — چک‌لیست روز، ثبت سریع انرژی/روحیه، آمار و استریک
+- **رودمپ** — ۱۱۰ آیتم در ۸ سطح با درصد پیشرفت و ذخیرهٔ محلی
+- **مستندات** — ۱۰ سند برنامهٔ ۱۰ ماهه (فازها، ماه‌به‌ماه، بک‌اند، درآمد، زبان…) با جست‌وجوی فارسی
+- **ابزارها** — پومودورو، تایپینگ، فلش‌کارد SRS، کوییز، چالش مصاحبه، تمرین لیکدکد، ماشین‌حساب ساب‌نت، داشبورد و تقویم
+- **بازی‌ها** — مرور شبکه‌ها، بازسازی تایم‌لاین، مایند‌مپ، شبیه‌ساز ترمینال
+- **PWA** — قابل نصب روی موبایل، سرویس‌ورکر با کش آفلاین، تم و `theme-color` زنده
+- **تم و رنگ** — ۳ حالت (گرافیت / کاغذ / میدنایت) + ۵ پالت اکسنت، RTL کامل با فونت وزیرمتن و اعداد فارسی
+- **ریسپانسیو** — داک پایین در موبایل، صفر سرریز در عرض ۳۶۰px در همهٔ مسیرها
+
+## 📸 تصاویر
+
+| خانه | مستندات |
+|---|---|
+| ![خانه](screenshots/qa-home.png) | ![مستندات](screenshots/qa-docs.png) |
+
+| موبایل |
+|---|
+| ![موبایل](screenshots/qa-tools-mobile.png) |
+
+## 🚀 شروع سریع
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+دستورهای دیگر: `npm run build` · `npm run start` · `npm run lint` · `npx tsc --noEmit`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 ساختار پروژه
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+website/
+├── content/                  # اسناد markdown برنامهٔ ۱۰ ماهه (محتوای مستندات)
+├── screenshots/              # تصاویر README
+├── public/
+│   ├── icons/                # آیکون‌های PWA (192/512/maskable/apple)
+│   ├── assets/plan/          # تصاویر نقشه‌ها و مایند‌مپ‌ها
+│   └── sw.js                 # سرویس‌ورکر (کش آفلاین)
+├── src/
+│   ├── app/                  # مسیرهای App Router (۱۵ صفحه + API جست‌وجو)
+│   ├── components/
+│   │   ├── ui/               # پریمیتیوهای shadcn (button, card, tabs, …)
+│   │   ├── layout/           # shell, navbar, footer, داک موبایل
+│   │   ├── shared/           # تم، اکسنت، سرچ‌دیالوگ، نوتیف، چارت‌ها
+│   │   ├── home/ docs/ tools/ today/ roadmap/ achievements/ pomodoro/
+│   │   ├── animations/ backgrounds/ blocks/
+│   │   └── ...
+│   └── lib/
+│       ├── data/             # داده‌های کوییز/لیکدکد/مصاحبه/فلش‌کارد/…
+│       ├── content.ts        # خواندن markdown از content/
+│       ├── store.ts          # localStorage store با SWR
+│       ├── jalali.ts         # تقویم جلالی
+│       └── utils.ts targets.ts pomo.ts streak.ts backup.ts use-mounted.ts
+├── .github/workflows/ci.yml  # CI: lint + type-check + build
+├── AGENTS.md                 # دستورالعمل‌های ایجنت‌ها
+└── LICENSE                   # MIT
+```
 
-## Learn More
+## 🗂 محتوا
 
-To learn more about Next.js, take a look at the following resources:
+اسناد برنامه در `content/*.md` زندگی می‌کنند و از همان‌جا توسط `src/lib/content.ts` خوانده می‌شوند؛ ویرایش یک فایل md بلافاصله در صفحهٔ `/docs/<SLUG>` بازتاب می‌شود.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 PWA
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+منیفست در `src/app/manifest.ts` (کنوانسیون رسمی Next)، سرویس‌ورکر در `public/sw.js`: پیش‌کش پوستهٔ ۷ مسیر اصلی، کش‌اول برای فایل‌های هش‌دار و شبکه‌اول برای صفحات با فالبک آفلاین.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2026 Pouria Pakzad — [MIT](LICENSE)

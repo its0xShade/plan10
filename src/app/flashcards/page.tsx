@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { FLASHCARDS, DECKS, type DeckId, type FlashCard } from "@/lib/flashcards-data";
+import { FLASHCARDS, DECKS, type DeckId, type FlashCard } from "@/lib/data/flashcards-data";
 import { useStore, toISO, fromISO } from "@/lib/store";
 import { fa } from "@/lib/utils";
 

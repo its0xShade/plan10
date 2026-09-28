@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { fa } from "@/lib/utils";
-import { PLAN_EVENTS } from "@/lib/events-data";
+import { PLAN_EVENTS } from "@/lib/data/events-data";
 import { toGregorian } from "@/lib/jalali";
 import { DAY_LABEL, TARGET_HOURS, WEEKDAY_FA, dayType } from "@/lib/store";
 

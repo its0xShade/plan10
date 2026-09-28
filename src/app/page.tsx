@@ -27,9 +27,9 @@ import { SpotlightBackground } from "@/components/backgrounds/spotlight";
 import { Stepper } from "@/components/ui/stepper";
 import { listDocs, getRoadmap } from "@/lib/content";
 import { fa } from "@/lib/utils";
-import { DayTypeBadge, ScheduleCards, WeeklyHoursWarning } from "@/components/today-panel";
-import { RoadmapWidget, WeekCompare, LogTrendCharts, WeekGoalsCard } from "@/components/dashboard-widgets";
-import { StreakChip } from "@/components/streak-achievements";
+import { DayTypeBadge, ScheduleCards, WeeklyHoursWarning } from "@/components/today/today-panel";
+import { RoadmapWidget, WeekCompare, LogTrendCharts, WeekGoalsCard } from "@/components/home/dashboard-widgets";
+import { StreakChip } from "@/components/achievements/streak-achievements";
 
 const START = new Date("2026-09-22T00:00:00");
 const END = new Date("2027-06-21T00:00:00");

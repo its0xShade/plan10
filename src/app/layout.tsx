@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Vazirmatn } from "next/font/google";
-import { Shell } from "@/components/shell";
+import { Shell } from "@/components/layout/shell";
 import "./globals.css";
 
 const vazirmatn = Vazirmatn({

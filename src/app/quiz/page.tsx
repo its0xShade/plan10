@@ -5,8 +5,8 @@ import { Brain, CheckCircle2, XCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { BarChart } from "@/components/charts";
-import { dailyQuestions } from "@/lib/quiz-data";
+import { BarChart } from "@/components/shared/charts";
+import { dailyQuestions } from "@/lib/data/quiz-data";
 import { useStore, todayISO, shortDay } from "@/lib/store";
 import { fa } from "@/lib/utils";
 

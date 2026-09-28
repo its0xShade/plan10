@@ -22,7 +22,7 @@ import { useStore } from "@/lib/store";
 import type { DayLog } from "@/app/log/page";
 import { calcStreak } from "@/lib/streak";
 import { usePomoLog } from "@/lib/pomo";
-import { BOOKS_SEED } from "@/lib/books-data";
+import { BOOKS_SEED } from "@/lib/data/books-data";
 import { fa } from "@/lib/utils";
 
 export interface RoadmapLite {

@@ -6,8 +6,8 @@ import { Route, ArrowUp, ShieldCheck, HardDrive, WifiOff, ArrowLeft } from "luci
 import { Button } from "@/components/ui/button";
 import { fa } from "@/lib/utils";
 import { toJalali } from "@/lib/jalali";
-import { DOC_LINKS, TOOL_LINKS } from "@/lib/nav-data";
-import { InstallChip } from "@/components/install-prompt";
+import { DOC_LINKS, TOOL_LINKS } from "@/lib/data/nav-data";
+import { InstallChip } from "@/components/shared/install-prompt";
 
 /** پابرگ — چهار ستون مرتب + نوار پایین با تاریخ شمسی و برگشت به بالا. */
 export function SiteFooter() {

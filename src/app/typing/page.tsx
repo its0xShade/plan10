@@ -6,7 +6,7 @@ import { Type, RotateCcw, Play, Trophy } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { TYPING_TEXTS, MODE_LABEL, type TypingMode } from "@/lib/typing-texts";
+import { TYPING_TEXTS, MODE_LABEL, type TypingMode } from "@/lib/data/typing-texts";
 import { useStore } from "@/lib/store";
 import { fa } from "@/lib/utils";
 
