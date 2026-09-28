@@ -1,6 +1,6 @@
 /* سرویس‌ورکر برنامه ۱۰ ماهه — استاتیک کش‌اول، صفحات شبکه‌اول با فالبک آفلاین */
 const CACHE = "plan10-v2";
-const SHELL = ["/", "/today", "/roadmap", "/log", "/pomodoro", "/docs", "/tools"];
+const SHELL = ["./", "today", "roadmap", "log", "pomodoro", "docs", "tools"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -59,7 +59,7 @@ self.addEventListener("fetch", (event) => {
           }
           return res;
         })
-        .catch(() => caches.match(req).then((r) => r || caches.match("/")))
+        .catch(() => caches.match(req).then((r) => r || caches.match("./")))
     );
     return;
   }

@@ -4,6 +4,7 @@ import * as React from "react";
 import { useRouter } from "next/navigation";
 import { FileText, Map, Search } from "lucide-react";
 import { fa } from "@/lib/utils";
+import { searchDocs, type SearchIndex } from "@/lib/search";
 
 interface Hit {
   source: "doc" | "roadmap";
@@ -11,6 +12,17 @@ interface Hit {
   context?: string;
   snippet: string;
   href: string;
+}
+
+let indexPromise: Promise<SearchIndex> | null = null;
+/** ایندکس ساخته‌شده در build را یک بار دانلود می‌کند. */
+function loadIndex(): Promise<SearchIndex> {
+  if (!indexPromise) {
+    indexPromise = fetch(`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/search-index.json`).then(
+      (r) => r.json() as Promise<SearchIndex>,
+    );
+  }
+  return indexPromise;
 }
 
 /** جستجوی سراسری — با Ctrl/⌘+K باز می‌شود. */
@@ -55,9 +67,8 @@ export function SearchDialog() {
     setLoading(true);
     const t = setTimeout(async () => {
       try {
-        const res = await fetch(`/api/search?q=${encodeURIComponent(q.trim())}`);
-        const data = await res.json();
-        setResults(data.results ?? []);
+        const idx = await loadIndex();
+        setResults(searchDocs(q.trim(), idx));
         setActive(0);
       } catch {
         setResults([]);

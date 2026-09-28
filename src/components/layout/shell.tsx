@@ -17,7 +17,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
   // PWA: ثبت سرویس‌ورکر
   React.useEffect(() => {
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js").catch(() => {});
+      navigator.serviceWorker.register(`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/sw.js`).catch(() => {});
     }
   }, []);
 

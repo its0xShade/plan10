@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# generated
+/public/search-index.json
+
 # production
 /build
 

@@ -13,10 +13,10 @@ export const metadata: Metadata = {
   title: "برنامه ۱۰ ماهه — از دوازدهم تا درآمد",
   description:
     "داشبورد برنامه‌ریزی: رودمپ بک‌اند پایتون، برنامه ماه‌به‌ماه، پیگیری عادات و KPI از مهر ۱۴۰۵ تا تیر ۱۴۰۶",
-  manifest: "/manifest.webmanifest",
+  manifest: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/manifest.webmanifest`,
   icons: {
-    icon: "/icons/icon-192.png",
-    apple: "/icons/apple-touch-icon.png",
+    icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/icons/icon-192.png`,
+    apple: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/icons/apple-touch-icon.png`,
   },
   appleWebApp: {
     capable: true,

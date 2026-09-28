@@ -8,7 +8,17 @@ import { Badge } from "@/components/ui/badge";
 import { PrintButton } from "@/components/shared/print-button";
 import { Mermaid, SlidesPlayer } from "@/components/shared/md-views";
 import { getDoc, listDocs } from "@/lib/content";
+
+/** برای خروجی استاتیک (output: export) — همه اسناد در زمان build پرچسب می‌شوند. */
+export function generateStaticParams() {
+  return listDocs().map((d) => ({ slug: d.slug }));
+}
 import { cn } from "@/lib/utils";
+
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+/** مسیرهای مطلق داخل محتوا (assets/docs) را به مسیر پایهٔ استقرار پیشوند می‌زند. */
+const withBase = (u?: string | Blob | null): string | undefined =>
+  typeof u === "string" && u.startsWith("/") ? `${BASE_PATH}${u}` : typeof u === "string" ? u : undefined;
 
 const mdComponents = {
   h1: (props: React.ComponentProps<"h1">) => (
@@ -25,7 +35,11 @@ const mdComponents = {
   ),
   p: (props: React.ComponentProps<"p">) => <p className="my-3 leading-[1.9]" {...props} />,
   a: (props: React.ComponentProps<"a">) => (
-    <a className="text-brand underline underline-offset-4 hover:opacity-80" {...props} />
+    <a
+      className="text-brand underline underline-offset-4 hover:opacity-80"
+      {...props}
+      href={withBase(props.href)}
+    />
   ),
   strong: (props: React.ComponentProps<"strong">) => (
     <strong className="font-bold text-foreground" {...props} />
@@ -77,6 +91,7 @@ const mdComponents = {
           className="my-4 rounded-xl border border-border bg-card/60 p-2 shadow-sm"
           loading="lazy"
           {...props}
+          src={withBase(props.src)}
           alt={props.alt || ""}
         />
   ),

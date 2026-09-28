@@ -82,7 +82,13 @@ export async function requestPermission(): Promise<Perm> {
 
 /** نمایش اعلان — از سرویس‌ورکر، و در نبودش از خود صفحه. */
 export async function showNotification(title: string, body: string, tag?: string) {
-  const opts: NotificationOptions = { body, icon: "/icons/icon-192.png", tag, lang: "fa", dir: "rtl" };
+  const opts: NotificationOptions = {
+    body,
+    icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/icons/icon-192.png`,
+    tag,
+    lang: "fa",
+    dir: "rtl",
+  };
   try {
     if ("serviceWorker" in navigator) {
       const reg = await Promise.race([
