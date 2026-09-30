@@ -198,7 +198,7 @@ function TargetsCard() {
             <label key={f2.key} className="block">
               <span className="mb-1 flex items-center justify-between text-xs text-muted-foreground">
                 {f2.label}
-                <span className="text-[10px]">{f2.suffix}</span>
+                <span className="text-xs">{f2.suffix}</span>
               </span>
               <input
                 type="number"

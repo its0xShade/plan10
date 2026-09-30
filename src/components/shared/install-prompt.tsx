@@ -62,7 +62,7 @@ export function InstallChip() {
         نصب اپ
       </button>
       {showHint && !evt ? (
-        <p className="basis-full text-[10px] leading-5 text-muted-foreground">
+        <p className="basis-full text-[11px] leading-5 text-muted-foreground">
           در سافاری: دکمه اشتراک‌گذاری ⇩ سپس «افزودن به صفحه اصلی».
         </p>
       ) : null}

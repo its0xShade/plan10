@@ -24,7 +24,7 @@ export function ProgressRing({ value, size = 96, stroke = 8, label, className }:
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <span className="text-lg font-bold tabular-nums">{faPercent(shown)}</span>
-        {label && <span className="text-[10px] text-muted-foreground">{label}</span>}
+        {label && <span className="text-[11px] text-muted-foreground">{label}</span>}
       </div>
     </div>
   );

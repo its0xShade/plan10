@@ -76,7 +76,7 @@ export function Navbar() {
             <span className="flex size-9 items-center justify-center rounded-lg bg-brand text-brand-foreground">
               <Route className="size-5" />
             </span>
-            <span className="hidden leading-tight sm:block">
+            <span className="leading-tight">
               <span className="block text-sm font-bold">برنامه ۱۰ ماهه</span>
               <span className="block text-[11px] text-muted-foreground">بک‌اند · معدل · درآمد</span>
             </span>
@@ -106,16 +106,15 @@ export function Navbar() {
             <ThemeToggle variant="icon" />
           </div>
 
-          {/* دکمه موبایل */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            aria-label="باز کردن منو"
-            onClick={() => setOpen(true)}
-          >
-            <Menu />
-          </Button>
+          {/* دکمه‌های موبایل — جست‌جو در کنار منو */}
+          <div className="flex items-center gap-0.5 md:hidden">
+            <Button variant="ghost" size="icon" aria-label="جستجو" onClick={openSearch}>
+              <Search />
+            </Button>
+            <Button variant="ghost" size="icon" aria-label="باز کردن منو" onClick={() => setOpen(true)}>
+              <Menu />
+            </Button>
+          </div>
         </nav>
       </header>
 
@@ -144,7 +143,7 @@ export function Navbar() {
             <Search />
             جستجو در برنامه…
           </span>
-          <kbd className="rounded border border-border bg-secondary px-1.5 font-mono text-[10px]" dir="ltr">
+          <kbd className="hidden rounded border border-border bg-secondary px-1.5 font-mono text-[10px]" dir="ltr">
             Ctrl K
           </kbd>
         </Button>

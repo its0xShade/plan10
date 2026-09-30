@@ -135,7 +135,7 @@ export default function CalendarPage() {
                   <CardContent className="flex flex-wrap items-center gap-3 pt-4">
                     <span className="flex size-11 shrink-0 flex-col items-center justify-center rounded-lg border border-border text-center leading-none">
                       <b className="text-sm">{fa(ev.j[2])}</b>
-                      <span className="mt-0.5 text-[9px] text-muted-foreground">{JALALI_MONTHS[ev.j[1] - 1].slice(0, 4)}</span>
+                      <span className="mt-0.5 text-[10px] text-muted-foreground">{JALALI_MONTHS[ev.j[1] - 1].slice(0, 4)}</span>
                     </span>
                     <span className="min-w-0 flex-1">
                       <span className="block text-sm font-medium leading-6">{ev.title}</span>

@@ -215,7 +215,7 @@ export default function TodayPage() {
                   <CardTitle className="flex items-center gap-2 text-base">
                     <Brain className="size-5 text-brand" /> سؤال امروز
                   </CardTitle>
-                  <Link href="/quiz" className="text-xs font-medium text-brand hover:underline">
+                  <Link href="/quiz" className="inline-flex min-h-8 items-center text-xs font-medium text-brand hover:underline">
                     کوییز کامل ({fa(5)} سؤال) ←
                   </Link>
                 </div>
@@ -305,7 +305,7 @@ export default function TodayPage() {
                 <div className="text-xl font-black">{fa(streak.current)} روز پیوسته</div>
                 <div className="text-[11px] text-muted-foreground">بهترین: {fa(streak.best)} روز</div>
               </div>
-              <Link href="/achievements" className="text-xs font-medium text-brand hover:underline">
+              <Link href="/achievements" className="inline-flex min-h-8 items-center text-xs font-medium text-brand hover:underline">
                 نشان‌ها ←
               </Link>
             </CardContent>
@@ -330,7 +330,7 @@ export default function TodayPage() {
               {upcoming.length === 0 && (
                 <div className="py-2 text-center text-xs text-muted-foreground">مهلتی باقی نمانده.</div>
               )}
-              <Link href="/calendar" className="block text-center text-xs font-medium text-brand hover:underline">
+              <Link href="/calendar" className="flex min-h-8 items-center justify-center text-xs font-medium text-brand hover:underline">
                 تقویم کامل ←
               </Link>
             </CardContent>

@@ -28,7 +28,7 @@ function Stars({ value, onChange }: { value: number; onChange: (v: number) => vo
           aria-checked={value === v}
           aria-label={`${v} از ۵`}
           onClick={() => onChange(v === value ? 0 : v)}
-          className="p-0.5 transition-transform hover:scale-110"
+          className="p-2 transition-transform hover:scale-110"
         >
           <Star className={`size-4 ${v <= value ? "fill-brand text-brand" : "text-muted-foreground/50"}`} />
         </button>

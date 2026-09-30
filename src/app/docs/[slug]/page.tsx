@@ -133,7 +133,7 @@ export default async function DocPage({ params }: { params: Promise<{ slug: stri
         <div className="flex items-center gap-2">
           <FileText className="size-5 text-brand" />
           <h1 className="text-xl font-black">{doc.meta.persianTitle}</h1>
-          <Badge variant="outline" className="font-mono text-[10px]" dir="ltr">
+          <Badge variant="outline" className="font-mono text-[11px]" dir="ltr">
             {doc.meta.slug}.md
           </Badge>
         </div>

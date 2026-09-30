@@ -133,7 +133,7 @@ export function DocsExplorer({ docs }: { docs: DocCardData[] }) {
                     <div className="mt-5 flex items-center gap-2">
                       <span className="text-[11px] font-semibold text-brand">{m.cat}</span>
                       <span className="h-px flex-1 bg-border" />
-                      <span className="inline-flex items-center gap-1 text-[10px] text-muted-foreground">
+                      <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
                         <Timer className="size-3" />
                         {fa(d.minutes)} دقیقه
                       </span>
@@ -142,8 +142,8 @@ export function DocsExplorer({ docs }: { docs: DocCardData[] }) {
                     <p className="mt-1 flex-1 text-xs leading-6 text-muted-foreground">{d.description}</p>
                     <div className="mt-5 flex items-center justify-between">
                       <div className="flex gap-1.5">
-                        <Badge variant="outline" className="text-[10px]">نمودار</Badge>
-                        <Badge variant="outline" className="text-[10px]">اسلاید</Badge>
+                        <Badge variant="outline" className="text-xs">نمودار</Badge>
+                        <Badge variant="outline" className="text-xs">اسلاید</Badge>
                       </div>
                       <span className="inline-flex items-center gap-1 text-xs font-medium text-brand opacity-0 transition-opacity group-hover:opacity-100">
                         خواندن <ArrowLeft className="size-3" />

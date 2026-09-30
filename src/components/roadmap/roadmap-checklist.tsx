@@ -340,7 +340,7 @@ export function RoadmapChecklist({ sections }: { sections: RoadmapSection[] }) {
                   <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-brand/15 text-sm font-black text-brand">
                     {levelNum(sec.title)}
                   </span>
-                  <CardTitle className="min-w-0 flex-1 truncate text-base">{sec.title}</CardTitle>
+                  <CardTitle className="min-w-0 text-base max-sm:order-first max-sm:basis-full sm:flex-1 sm:truncate">{sec.title}</CardTitle>
                   {weeks && <Badge variant="outline">{weeks}</Badge>}
                   {allDone && <Badge variant="success">کامل ✓</Badge>}
                   <Badge variant={someDone || allDone ? "brand" : "secondary"}>

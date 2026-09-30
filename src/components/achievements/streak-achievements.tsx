@@ -182,7 +182,7 @@ export function AchievementPanel({ sections }: { sections: RoadmapLite[] }) {
             {facts.streak.todayPending && (
               <Badge variant="destructive">امروز هنوز ثبت نشده</Badge>
             )}
-            <Link href="/log" className="text-sm font-medium text-brand hover:underline">
+            <Link href="/log" className="inline-flex min-h-8 items-center text-sm font-medium text-brand hover:underline">
               ثبت امروز ←
             </Link>
           </div>
@@ -227,7 +227,7 @@ export function AchievementPanel({ sections }: { sections: RoadmapLite[] }) {
                 </div>
                 {prog && (
                   <div className="mt-auto">
-                    <div className="mb-1 flex justify-between text-[10px] text-muted-foreground">
+                    <div className="mb-1 flex justify-between text-[11px] text-muted-foreground">
                       <span>{on ? "تمام شد ✓" : `${fa(prog[0])} از ${fa(prog[1])}`}</span>
                       <span>{fa(pct)}٪</span>
                     </div>

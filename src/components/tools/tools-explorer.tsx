@@ -105,9 +105,9 @@ export function ToolsExplorer() {
         <div className="mb-3 flex items-center gap-3">
           <h2 className="text-sm font-bold text-muted-foreground">روتین پیشنهادی روز</h2>
           <span className="h-px flex-1 bg-border" />
-          <Badge variant="secondary" className="text-[10px]">از صبح تا شب</Badge>
+          <Badge variant="secondary" className="text-xs">از صبح تا شب</Badge>
         </div>
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {ROUTINE.map((r) => (
             <Link key={r.href} href={r.href} className="group">
               <Card className="h-full transition-all duration-200 group-hover:-translate-y-0.5 group-hover:border-brand/50 group-hover:shadow-lg group-hover:shadow-brand/5">
@@ -115,10 +115,10 @@ export function ToolsExplorer() {
                   <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-brand/10 text-brand transition-all group-hover:scale-110">
                     <r.Icon className="size-5" />
                   </span>
-                  <div className="min-w-0 leading-tight">
+                  <div className="min-w-0 flex-1 leading-tight">
                     <div className="flex items-center gap-1.5">
                       <span className="text-sm font-bold">{r.label}</span>
-                      <span className="text-[10px] text-muted-foreground">{r.time}</span>
+                      <span className="text-xs text-muted-foreground">{r.time}</span>
                     </div>
                     <div className="mt-1 truncate text-xs text-muted-foreground">{r.hint}</div>
                   </div>
@@ -202,7 +202,7 @@ export function ToolsExplorer() {
             <div className="mb-3 flex items-center gap-3">
               <h2 className="text-sm font-bold text-muted-foreground">{g.group}</h2>
               <span className="h-px flex-1 bg-border" />
-              <Badge variant="secondary" className="text-[10px]">
+              <Badge variant="secondary" className="text-xs">
                 {g.items.length}
               </Badge>
             </div>
@@ -218,7 +218,7 @@ export function ToolsExplorer() {
                         >
                           <t.Icon className="size-5" />
                         </span>
-                        <Badge variant="outline" className="text-[10px]">
+                        <Badge variant="outline" className="text-xs">
                           {t.tag}
                         </Badge>
                       </div>
