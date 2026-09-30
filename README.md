@@ -7,7 +7,11 @@
   <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-yellow">
+  <a href="https://github.com/its0xShade/plan10/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/its0xShade/plan10/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/its0xShade/plan10/actions/workflows/deploy.yml"><img alt="Deploy" src="https://github.com/its0xShade/plan10/actions/workflows/deploy.yml/badge.svg"></a>
 </p>
+
+**🌐 نسخهٔ زنده: <https://its0xshade.github.io/plan10/>** — با هر push روی `main` به‌صورت خودکار منتشر می‌شود.
 
 ## ✨ امکانات
 
